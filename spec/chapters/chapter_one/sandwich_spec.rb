@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+Sandwich = Struct.new(:taste, :toppings)
+
 describe 'An ideal sandwich' do
   it 'is delicious' do
     sandwich = Sandwich.new('delicious', [])
