@@ -2,6 +2,10 @@ machine:
   ruby:
     version: 2.4.0
 
+dependencies:
+  pre:
+    - gem install bundler
+
 test:
   override:
     - RSPEC_ENV=test bundle exec rspec -r rspec_junit_formatter --format progress --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
