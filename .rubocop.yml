@@ -1,0 +1,6 @@
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'Rakefile'
+    - 'spec/spec_helper.rb'

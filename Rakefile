@@ -7,3 +7,7 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 task :default => :spec
+
+task :rubocop do
+  sh 'rubocop'
+end
