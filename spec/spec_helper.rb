@@ -1,6 +1,11 @@
 require 'simplecov'
 SimpleCov.start
 
+if ENV['CIRCLE_ARTIFACTS']
+  dir = File.join(ENV['CIRCLE_ARTIFACTS'], 'coverage')
+  SimpleCov.coverage_dir(dir)
+end
+
 ENV['RACK_ENV'] = 'test'
 
 RSpec.configure do |config|
