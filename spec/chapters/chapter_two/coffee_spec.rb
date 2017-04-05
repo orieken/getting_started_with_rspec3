@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 class Coffee
@@ -21,7 +23,6 @@ class Coffee
     ingredients.include?(:milk) ? 190.0 : 205.0
   end
 end
-
 
 describe 'A cup of coffee' do
   let(:coffee) { Coffee.new }

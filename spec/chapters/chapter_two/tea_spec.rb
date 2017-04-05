@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 class Tea
@@ -20,5 +22,4 @@ describe Tea do
   it 'is hot' do
     expect(tea.temperature).to be > 200.0
   end
-
 end
