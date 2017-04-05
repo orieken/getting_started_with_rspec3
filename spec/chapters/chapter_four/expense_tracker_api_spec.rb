@@ -10,7 +10,7 @@ def app
 end
 
 module ExpenseTracker
-  fdescribe 'Expense Tracker Api' do
+  describe 'Expense Tracker Api' do
     include Rack::Test::Methods
 
     it 'records submitted expenses' do
