@@ -6,3 +6,4 @@ gem 'rspec_junit_formatter'
 gem 'rake'
 gem 'guard-rspec', '~> 4.7', require: false
 gem 'terminal-notifier-guard', '~> 1.6.1'
+gem 'coderay', '~> 1.1'

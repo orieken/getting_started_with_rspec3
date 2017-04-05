@@ -64,6 +64,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coderay (~> 1.1)
   guard-rspec (~> 4.7)
   rake
   rspec (~> 3.6.0.beta2)
