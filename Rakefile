@@ -8,6 +8,13 @@ end
 
 task :default => :spec
 
+desc 'Rubocop'
 task :rubocop do
   sh 'rubocop'
+end
+
+desc 'Runs all build tasks'
+task :build do
+  Rake::Task['rubocop'].invoke
+  Rake::Task['spec'].invoke
 end
